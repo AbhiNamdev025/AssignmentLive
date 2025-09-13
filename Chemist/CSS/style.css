@@ -11,7 +11,6 @@ img {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.655);
 }
 
-/* Container for consistent width */
 .container {
   max-width: 1250px;
   margin: auto;
@@ -655,4 +654,137 @@ li::before {
 .contact-form input:focus {
   border: 2px solid #4887a2;
   outline: none;
+}
+
+/* ------------------ Responsive ------------------ */
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar img {
+    height: 50px;
+    width: 70px;
+  }
+
+  .hero-text {
+    font-size: 48px;
+    margin-left: 0;
+    width: 100%;
+    padding: 6rem 1rem 0;
+  }
+
+  .hero-btn button {
+    margin-left: 0;
+    display: block;
+    margin: 2rem auto 0;
+  }
+
+  .aboutleft p {
+    width: 80%;
+  }
+
+  .aboutright img {
+    width: 320px;
+    height: auto;
+  }
+}
+
+/* --- Minimal Mobile Fixes --- */
+@media screen and (max-width: 768px) {
+  /* Header */
+  .icons {
+    position: static;
+    margin-left: 0;
+  }
+
+  /* Navbar */
+  .navbar {
+    height: auto;
+    padding: 0.5rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  .hero-text {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  .hero-btn button {
+    margin: 1.5rem auto 0;
+    display: block;
+  }
+
+  /* About */
+  .about {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+  .aboutright {
+    float: none;
+    position: static;
+    margin: 2rem auto 0;
+    text-align: center;
+  }
+  .aboutright img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+  .aboutleft p {
+    width: 90%;
+  }
+
+  /* Services slider */
+  .slider-track {
+    width: auto;
+    animation: none;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: 260px;
+    margin: 0 8px;
+    flex-shrink: 0;
+  }
+
+  /* Category */
+  .category-card {
+    width: 90%;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  /* Footer */
+  .footer-section {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .links-section,
+  .social-section {
+    padding-left: 0;
+  }
+
+  /* Contact */
+  .contact-form {
+    width: 95%;
+  }
+  .contact-form button {
+    width: 100%;
+    margin-left: 0;
+  }
 }
